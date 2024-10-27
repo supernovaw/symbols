@@ -1,19 +1,19 @@
 const allChars = [
     // logic
-    ["¬", "not, ~"],
+    ["¬", "not, ~, !"],
     ["≡", "equivalent, congruent, ="],
     ["≢", "not equivalent, not congruent, !="],
-    ["∧", "and"],
-    ["∨", "or"],
-    ["⊕", "xor (exclusive or)"],
+    ["∧", "and, &"],
+    ["∨", "or, |"],
+    ["⊕", "xor (exclusive or), ^"],
     ["↑", "nand (not and)"],
     ["↓", "nor (not or)"],
-    ["→", "implies"],
-    ["←", "is implied by"],
-    ["↔", "biconditional (iff, if and only if)"],
-    ["⇒", "predicate implies"],
-    ["⇐", "predicate is implied by"],
-    ["⇔", "predicate biconditional (iff, if and only if)"],
+    ["→", "implies, ->"],
+    ["←", "is implied by, <-"],
+    ["↔", "biconditional (iff, if and only if), <->"],
+    ["⇒", "predicate implies, =>"],
+    ["⇐", "predicate is implied by, <="],
+    ["⇔", "predicate biconditional (iff, if and only if), <=>"],
     ["∴", "therefore"],
     ["∵", "because"],
     ["∎", "end of proof, quod erat demonstrandum, QED"],
@@ -129,11 +129,11 @@ const allChars = [
     ["♍", "Virgo"],
     ["♎", "Libra"],
     ["♏", "Scorpius"],
+    ["⛎", "Ophiuchus"],
     ["♐", "Sagittarius"],
     ["♑", "Capricorn"],
     ["♒", "Aquarius"],
     ["♓", "Pisces"],
-    ["⛎", "Ophiuchus"],
     ["♀", "Venus, female"],
     ["♂", "Mars, male"],
     ["⛇", "snowman"],
@@ -237,7 +237,7 @@ function updateListDiv() {
         descDiv.textContent = description;
 
         const div = document.createElement("div");
-        if (selectedIdx === i) div.className = "selected"
+        if (selectedIdx === i) div.className = "selected";
         div.appendChild(charDiv);
         div.appendChild(descDiv);
         return div;
