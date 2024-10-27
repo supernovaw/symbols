@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "math_font";
+    /* src: url("./NewCMMath-Regular.otf"); */
+    src: url("./newcmmath_subset.otf");
+}
+
+html {
+    background-color: #121212;
+    color-scheme: dark;
+    font-family: "SF Pro Text", "SF Pro Display", "Cantarell", -apple-system, "Roboto", "Segoe UI", sans-serif;
+    overflow-y: scroll;
+}
+
+#notes {
+    text-align: center;
+    margin: auto;
+    padding: 16px;
+    font-size: 16px;
+    max-width: 1000px;
+}
+
+#sticky-input-wrapper {
+    position: sticky;
+    top: 30px;
+}
+
+input {
+    font: inherit;
+    font-size: 50px;
+    background-color: #2224;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px black;
+    border: none;
+    border-radius: 0.2em;
+    outline: none;
+    display: block;
+    padding: 0.1em 0.2em;
+    margin: auto;
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 1000px;
+}
+
+#filtered-list {
+    font-size: 30px;
+    margin: 50px auto;
+    padding-inline: 20px;
+    max-width: 1000px;
+}
+
+#filtered-list>div {
+    display: flex;
+    align-items: center;
+    border-radius: 0.4em;
+    cursor: pointer;
+}
+
+#filtered-list>div:nth-child(2n-1) {
+    background-color: #242424;
+}
+
+#filtered-list>div.selected {
+    outline: 5px solid #37e;
+    outline-offset: -5px;
+}
+
+#filtered-list .character {
+    flex-shrink: 0;
+    line-height: 1.2;
+    font-size: 150%;
+    padding: 0.05em;
+    width: 2em;
+    text-align: center;
+    font-family: "math_font";
+    overflow: hidden;
+}
+
+#copy-popup {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    translate: -50% -50%;
+    font-size: min(5vw, 5vh, 25px);
+    text-align: center;
+    backdrop-filter: blur(5px);
+    padding: 1.5em 2em;
+    border-radius: 1em;
+    background-color: #0005;
+    box-shadow: 0 0 1.5em black;
+    user-select: none;
+    pointer-events: none;
+    display: none;
+}
+
+#copy-popup .symbol {
+    font-family: "math_font";
+    text-align: center;
+    font-size: 300%;
+}
+
+@keyframes popup-fade {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

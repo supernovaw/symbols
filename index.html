@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math symbols</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="pi_64x.png">
+    <script defer type="module" src="script.js"></script>
+</head>
+
+<body>
+    <div id="notes">
+        Feel free to steal this project:
+        <a target="_blank" download href="https://supernovaw.website/symbols.zip" title="https://supernovaw.website/symbols.zip">download zip</a>,
+        <a target="_blank" href="https://github.com/supernovaw/symbols.git">GitHub</a> or good old View Page Source.<br>
+        Use up/down arrows to move selection, press enter to copy (or click the symbols).<br>
+    </div>
+    <div id="sticky-input-wrapper">
+        <input id="symbol-name" autofocus type="text" placeholder="Enter symbol name…">
+    </div>
+    <!-- Entirety of the following div is auto-generated through DevTools for better SSR (to be more non-JS friendly)
+         Equivalent to adding `filterList("");` at the end of script.js (if you can't be bothered to regenerate this part, then leave the div blank) -->
+    <div id="filtered-list">
+        <div class="selected"><div class="character">¬</div><div class="description">not, ~</div></div>
+        <div><div class="character">≡</div><div class="description">equivalent, congruent, =</div></div>
+        <div><div class="character">≢</div><div class="description">not equivalent, not congruent, !=</div></div>
+        <div><div class="character">∧</div><div class="description">and</div></div>
+        <div><div class="character">∨</div><div class="description">or</div></div>
+        <div><div class="character">⊕</div><div class="description">xor (exclusive or)</div></div>
+        <div><div class="character">↑</div><div class="description">nand (not and)</div></div>
+        <div><div class="character">↓</div><div class="description">nor (not or)</div></div>
+        <div><div class="character">→</div><div class="description">implies</div></div>
+        <div><div class="character">←</div><div class="description">is implied by</div></div>
+        <div><div class="character">↔</div><div class="description">biconditional (iff, if and only if)</div></div>
+        <div><div class="character">⇒</div><div class="description">predicate implies</div></div>
+        <div><div class="character">⇐</div><div class="description">predicate is implied by</div></div>
+        <div><div class="character">⇔</div><div class="description">predicate biconditional (iff, if and only if)</div></div>
+        <div><div class="character">∴</div><div class="description">therefore</div></div>
+        <div><div class="character">∵</div><div class="description">because</div></div>
+        <div><div class="character">∎</div><div class="description">end of proof, quod erat demonstrandum, QED</div></div>
+        <div><div class="character">∀</div><div class="description">for all</div></div>
+        <div><div class="character">∃</div><div class="description">there exists</div></div>
+        <div><div class="character">∄</div><div class="description">there does not exist</div></div>
+        <div><div class="character">∈</div><div class="description">element of (belongs to)</div></div>
+        <div><div class="character">∉</div><div class="description">not an element of (does not belong to)</div></div>
+        <div><div class="character">∩</div><div class="description">intersection</div></div>
+        <div><div class="character">∪</div><div class="description">union</div></div>
+        <div><div class="character">⊂</div><div class="description">subset of</div></div>
+        <div><div class="character">⊆</div><div class="description">subset of or equal to</div></div>
+        <div><div class="character">⊄</div><div class="description">not a subset of</div></div>
+        <div><div class="character">⊃</div><div class="description">superset of</div></div>
+        <div><div class="character">⊇</div><div class="description">superset of or equal to</div></div>
+        <div><div class="character">⊅</div><div class="description">not a superset of</div></div>
+        <div><div class="character">ℕ</div><div class="description">N (natural set)</div></div>
+        <div><div class="character">ℤ</div><div class="description">Z (integer set)</div></div>
+        <div><div class="character">ℚ</div><div class="description">Q (rational set)</div></div>
+        <div><div class="character">ℝ</div><div class="description">R (real set)</div></div>
+        <div><div class="character">ℂ</div><div class="description">C (complex set)</div></div>
+        <div><div class="character">×</div><div class="description">multiply, product, times, *</div></div>
+        <div><div class="character">÷</div><div class="description">divide, /</div></div>
+        <div><div class="character">≈</div><div class="description">approximately equal, almost equal, ~</div></div>
+        <div><div class="character">≠</div><div class="description">not equal, !=</div></div>
+        <div><div class="character">≤</div><div class="description">less than or equal, &lt;=</div></div>
+        <div><div class="character">≥</div><div class="description">greater than or equal, &gt;=</div></div>
+        <div><div class="character">±</div><div class="description">plus-minus, +-</div></div>
+        <div><div class="character">∓</div><div class="description">minus-plus, -+</div></div>
+        <div><div class="character">∣</div><div class="description">divides, |</div></div>
+        <div><div class="character">∤</div><div class="description">does not divide, !|</div></div>
+        <div><div class="character">√</div><div class="description">root2, square root, radical</div></div>
+        <div><div class="character">∛</div><div class="description">root3, cube root</div></div>
+        <div><div class="character">∜</div><div class="description">root4</div></div>
+        <div><div class="character">∂</div><div class="description">partial differential (cursive d)</div></div>
+        <div><div class="character">∫</div><div class="description">integral</div></div>
+        <div><div class="character">∏</div><div class="description">product (capital pi)</div></div>
+        <div><div class="character">∑</div><div class="description">sum (capital sigma)</div></div>
+        <div><div class="character">∝</div><div class="description">proportional to</div></div>
+        <div><div class="character">∞</div><div class="description">infinity</div></div>
+        <div><div class="character">⁰</div><div class="description">^0, superscript 0, to the zeroth</div></div>
+        <div><div class="character">¹</div><div class="description">^1, superscript 1, to the first</div></div>
+        <div><div class="character">²</div><div class="description">^2, superscript 2, to the second, squared</div></div>
+        <div><div class="character">³</div><div class="description">^3, superscript 3, to the third, cubed</div></div>
+        <div><div class="character">⁴</div><div class="description">^4, superscript 4, to the fourth</div></div>
+        <div><div class="character">⁵</div><div class="description">^5, superscript 5, to the fifth</div></div>
+        <div><div class="character">⁶</div><div class="description">^6, superscript 6, to the sixth</div></div>
+        <div><div class="character">⁷</div><div class="description">^7, superscript 7, to the seventh</div></div>
+        <div><div class="character">⁸</div><div class="description">^8, superscript 8, to the eighth</div></div>
+        <div><div class="character">⁹</div><div class="description">^9, superscript 9, to the ninth</div></div>
+        <div><div class="character">ⁿ</div><div class="description">^n, superscript n, to the nth</div></div>
+        <div><div class="character">⁺</div><div class="description">^+, superscript plus</div></div>
+        <div><div class="character">⁻</div><div class="description">^-, superscript minus</div></div>
+        <div><div class="character">₀</div><div class="description">_0, subscript 0, sub-0</div></div>
+        <div><div class="character">₁</div><div class="description">_1, subscript 1, sub-1</div></div>
+        <div><div class="character">₂</div><div class="description">_2, subscript 2, sub-2</div></div>
+        <div><div class="character">₃</div><div class="description">_3, subscript 3, sub-3</div></div>
+        <div><div class="character">₄</div><div class="description">_4, subscript 4, sub-4</div></div>
+        <div><div class="character">₅</div><div class="description">_5, subscript 5, sub-5</div></div>
+        <div><div class="character">₆</div><div class="description">_6, subscript 6, sub-6</div></div>
+        <div><div class="character">₇</div><div class="description">_7, subscript 7, sub-7</div></div>
+        <div><div class="character">₈</div><div class="description">_8, subscript 8, sub-8</div></div>
+        <div><div class="character">₉</div><div class="description">_9, subscript 9, sub-9</div></div>
+        <div><div class="character">ₙ</div><div class="description">_n, subscript n, sub-n</div></div>
+        <div><div class="character">₊</div><div class="description">_+, subscript plus</div></div>
+        <div><div class="character">₋</div><div class="description">_-, subscript minus</div></div>
+        <div><div class="character">α</div><div class="description">alpha</div></div>
+        <div><div class="character">β</div><div class="description">beta</div></div>
+        <div><div class="character">γ</div><div class="description">gamma</div></div>
+        <div><div class="character">ε</div><div class="description">epsilon</div></div>
+        <div><div class="character">η</div><div class="description">eta</div></div>
+        <div><div class="character">θ</div><div class="description">theta</div></div>
+        <div><div class="character">λ</div><div class="description">lambda</div></div>
+        <div><div class="character">μ</div><div class="description">mu</div></div>
+        <div><div class="character">ν</div><div class="description">nu</div></div>
+        <div><div class="character">ξ</div><div class="description">xi</div></div>
+        <div><div class="character">π</div><div class="description">pi</div></div>
+        <div><div class="character">ρ</div><div class="description">rho</div></div>
+        <div><div class="character">σ</div><div class="description">sigma</div></div>
+        <div><div class="character">τ</div><div class="description">tau</div></div>
+        <div><div class="character">φ</div><div class="description">phi</div></div>
+        <div><div class="character">ω</div><div class="description">omega</div></div>
+        <div><div class="character">∆</div><div class="description">delta (capital)</div></div>
+        <div><div class="character">Φ</div><div class="description">phi (capital)</div></div>
+        <div><div class="character">Ω</div><div class="description">omega (capital), ohm</div></div>
+        <div><div class="character">–</div><div class="description">en dash, minus, -</div></div>
+        <div><div class="character">—</div><div class="description">em dash, -</div></div>
+        <div><div class="character">°</div><div class="description">degree</div></div>
+        <div><div class="character">µ</div><div class="description">micro (mu)</div></div>
+        <div><div class="character">½</div><div class="description">1/2, one-half</div></div>
+        <div><div class="character">¼</div><div class="description">1/4, one-quarter</div></div>
+        <div><div class="character">¾</div><div class="description">3/4, three-quarters</div></div>
+        <div><div class="character">·</div><div class="description">middle dot, dot product, .</div></div>
+        <div><div class="character">✓</div><div class="description">yes, check mark</div></div>
+        <div><div class="character">✕</div><div class="description">no, cross mark</div></div>
+        <div><div class="character">♈</div><div class="description">Aries</div></div>
+        <div><div class="character">♉</div><div class="description">Taurus</div></div>
+        <div><div class="character">♊</div><div class="description">Gemini</div></div>
+        <div><div class="character">♋</div><div class="description">Cancer</div></div>
+        <div><div class="character">♌</div><div class="description">Leo</div></div>
+        <div><div class="character">♍</div><div class="description">Virgo</div></div>
+        <div><div class="character">♎</div><div class="description">Libra</div></div>
+        <div><div class="character">♏</div><div class="description">Scorpius</div></div>
+        <div><div class="character">♐</div><div class="description">Sagittarius</div></div>
+        <div><div class="character">♑</div><div class="description">Capricorn</div></div>
+        <div><div class="character">♒</div><div class="description">Aquarius</div></div>
+        <div><div class="character">♓</div><div class="description">Pisces</div></div>
+        <div><div class="character">⛎</div><div class="description">Ophiuchus</div></div>
+        <div><div class="character">♀</div><div class="description">Venus, female</div></div>
+        <div><div class="character">♂</div><div class="description">Mars, male</div></div>
+        <div><div class="character">⛇</div><div class="description">snowman</div></div>
+    </div>
+    <div id="copy-popup">
+        Copied <div class="symbol"></div>
+    </div>
+</body>
+
+</html>
